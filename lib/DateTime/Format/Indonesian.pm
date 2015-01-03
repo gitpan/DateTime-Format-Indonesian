@@ -6,7 +6,7 @@ use warnings;
 
 use DateTime;
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 our $_Current_Dt; # for testing only, to mock current time
 
@@ -126,13 +126,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 DateTime::Format::Indonesian - Parse and format Indonesian dates
 
 =head1 VERSION
 
-version 0.01
+This document describes version 0.02 of DateTime::Format::Indonesian (from Perl distribution DateTime-Format-Indonesian), released on 2015-01-03.
 
 =head1 SYNOPSIS
 
@@ -142,8 +144,7 @@ version 0.01
 
 =head1 DESCRIPTION
 
-This is an early release. Not all things have been implemented yet. See
-L</"TODO">.
+This is an early release. Not all things have been implemented yet.
 
 =head1 METHODS
 
@@ -161,36 +162,33 @@ the recognized forms include:
  dd-mmm-yy or dd-mmm-yy   (other separators include whitespace or dash)
  dd-mmmm-yy or dd-mmmm-yy (long month names)
 
-=head1 TODO
-
-=over
-
-=item * Recognize more forms
-
-Try to guess whether 01/02/99 is d/m/y or m/d/y (check if the other one is
-impossible; default to d/m/y but if sees lots of other m/d/y then m/d/y).
-
- mmm-dd-yy[yy]
-
-=item * Autocorrect typo [#E]
-
-=item * Formatter [#B]
-
-=item * Recognize/parse/ignore day of week names
-
-=back
-
 =head1 SEE ALSO
 
 L<DateTime>
 
+=head1 HOMEPAGE
+
+Please visit the project's homepage at L<https://metacpan.org/release/DateTime-Format-Indonesian>.
+
+=head1 SOURCE
+
+Source repository is at L<https://github.com/sharyanto/perl-DateTime-Format-Indonesian>.
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website L<https://rt.cpan.org/Public/Dist/Display.html?Name=DateTime-Format-Indonesian>
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
+
 =head1 AUTHOR
 
-Steven Haryanto <stevenharyanto@gmail.com>
+perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Steven Haryanto.
+This software is copyright (c) 2015 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
